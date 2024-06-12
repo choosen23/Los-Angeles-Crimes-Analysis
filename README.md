@@ -9,18 +9,18 @@ This project aims to analyze crime data in Los Angeles using PySpark. It include
 
 - `code/`: Directory containing the PySpark scripts organized by different approaches.
   - `DataFrame/`: Scripts using the DataFrame API.
-    - `Q1_CSV.py`: Script for analyzing data with CSV format.
-    - `Q1_PARQ.py`: Script for analyzing data with Parquet format.
-    - `Q3_ALL.py`: Script for executing the main analysis.
-    - `Q3_CSV.py`: Script for analyzing data with CSV format.
-    - `Q4.py`: Script for additional analysis.
+    - `Q1_CSV.py`: Script for Q1 with CSV format.
+    - `Q1_PARQ.py`: Script for Q1 with Parquet format.
+    - `Q3_ALL.py`: Script for Q3.
+    - `Q3_CSV.py`: Script for Q3 with CSV format.
+    - `Q4.py`: Script for Q4 using Dataframe.
   - `RDD/`: Scripts using the RDD API.
-    - `Q2_CSV.py`: Script for analyzing data with CSV format.
-    - `Q4_JOIN.py`: Script for performing joins using RDDs.
+    - `Q2_CSV.py`: Script for Q2 with CSV format.
+    - `Q4_JOIN.py`: Script for Q4 with joins using RDDs.
   - `SQL/`: Scripts using the SQL API.
-    - `Q1_CSV.py`: Script for analyzing data with CSV format.
-    - `Q1_PARQ.py`: Script for analyzing data with Parquet format.
-    - `Q2_CSV.py`: Script for analyzing data with CSV format.
+    - `Q1_CSV.py`: Script for Q1 with CSV format.
+    - `Q1_PARQ.py`: Script for  Q1 with Parquet format.
+    - `Q2_CSV.py`: Script for Q2 with CSV format.
     - `csv_to_parquet.py`: Utility script for converting CSV to Parquet.
 - `.gitattributes`: Git attributes configuration.
 - `README.md`: This readme file.
@@ -43,13 +43,8 @@ cd crime-data-analysis
 
 ```
 
-2. Install the required packages:
 
-```bash
-pip install -r requirements.txt
-```
-
-3. Download the crime data and police station data from the following links:
+2. Download the crime data and police station data from the following links:
 * [Crime Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2010-to-2019/63jg-8b9z)
 * [Police Station Data](https://geohub.lacity.org/datasets/lahub::lapd-police-stations/explore)
 * [Median Household Income Data](https://www.laalmanac.com/employment/em12c_2015.php)
